@@ -1,0 +1,1406 @@
+{
+  "source": "汕头大学信息公开网·学校办事指南",
+  "crawledAt": "2026-11-01T13:13:13.263Z",
+  "extractedAt": "2026-11-01T13:16:45.386Z",
+  "totalArticles": 153,
+  "totalChars": 28669,
+  "thinCount": 3,
+  "byCategory": {
+    "人事工作": 1,
+    "后勤基建": 3,
+    "学生工作": 16,
+    "安全管理": 5,
+    "审计工作": 1,
+    "宣传工作": 3,
+    "对外交流与合作": 16,
+    "工会工作": 15,
+    "教学管理": 5,
+    "校友工作": 5,
+    "科学研究": 17,
+    "纪检监察工作": 1,
+    "组织工作": 2,
+    "综合管理": 44,
+    "行政工作": 3,
+    "财务管理": 13,
+    "资产管理": 3
+  },
+  "articles": [
+    {
+      "id": "1356-2004",
+      "category": "人事工作",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1356/2004.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1356-2004.txt"
+    },
+    {
+      "id": "1360-1975",
+      "category": "后勤基建",
+      "title": "车辆登记申请流程",
+      "url": "https://info.stu.edu.cn/info/1360/1975.htm",
+      "chars": 176,
+      "thin": false,
+      "file": "data/extracted/1360-1975.txt"
+    },
+    {
+      "id": "1360-1976",
+      "category": "后勤基建",
+      "title": "基建、维修改造工程流程图",
+      "url": "https://info.stu.edu.cn/info/1360/1976.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1360-1976.txt"
+    },
+    {
+      "id": "1360-1977",
+      "category": "后勤基建",
+      "title": "学校弱电招标工程合同款支付流程与办法",
+      "url": "https://info.stu.edu.cn/info/1360/1977.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1360-1977.txt"
+    },
+    {
+      "id": "1357-2073",
+      "category": "学生工作",
+      "title": "团员组织关系转接工作流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2073.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1357-2073.txt"
+    },
+    {
+      "id": "1357-2074",
+      "category": "学生工作",
+      "title": "团费收缴、团籍注册流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2074.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1357-2074.txt"
+    },
+    {
+      "id": "1357-2077",
+      "category": "学生工作",
+      "title": "国家奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2077.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1357-2077.txt"
+    },
+    {
+      "id": "1357-2078",
+      "category": "学生工作",
+      "title": "企业及个人捐助奖学金评选工作流程",
+      "url": "https://info.stu.edu.cn/info/1357/2078.htm",
+      "chars": 184,
+      "thin": false,
+      "file": "data/extracted/1357-2078.txt"
+    },
+    {
+      "id": "1357-2079",
+      "category": "学生工作",
+      "title": "汕头大学奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2079.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1357-2079.txt"
+    },
+    {
+      "id": "1357-2080",
+      "category": "学生工作",
+      "title": "体育精神奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2080.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1357-2080.txt"
+    },
+    {
+      "id": "1357-2081",
+      "category": "学生工作",
+      "title": "优秀学生奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1357/2081.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1357-2081.txt"
+    },
+    {
+      "id": "1357-2082",
+      "category": "学生工作",
+      "title": "汕头大学学生校外勤工助学岗位登记表",
+      "url": "https://info.stu.edu.cn/info/1357/2082.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1357-2082.txt"
+    },
+    {
+      "id": "1357-2083",
+      "category": "学生工作",
+      "title": "汕头大学校内勤工助学岗位设置申请表",
+      "url": "https://info.stu.edu.cn/info/1357/2083.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1357-2083.txt"
+    },
+    {
+      "id": "1357-2084",
+      "category": "学生工作",
+      "title": "汕头大学勤工助学管理流程",
+      "url": "https://info.stu.edu.cn/info/1357/2084.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1357-2084.txt"
+    },
+    {
+      "id": "1357-2085",
+      "category": "学生工作",
+      "title": "勤工助学学生岗前培训暨安全教育记录表",
+      "url": "https://info.stu.edu.cn/info/1357/2085.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1357-2085.txt"
+    },
+    {
+      "id": "1357-2086",
+      "category": "学生工作",
+      "title": "汕头大学家庭经济困难学生认定管理流程",
+      "url": "https://info.stu.edu.cn/info/1357/2086.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1357-2086.txt"
+    },
+    {
+      "id": "1357-2087",
+      "category": "学生工作",
+      "title": "广东省家庭经济困难学生认定申请表（含填表说明）",
+      "url": "https://info.stu.edu.cn/info/1357/2087.htm",
+      "chars": 191,
+      "thin": false,
+      "file": "data/extracted/1357-2087.txt"
+    },
+    {
+      "id": "1357-2088",
+      "category": "学生工作",
+      "title": "广东省家庭经济困难学生认定工作指导意见",
+      "url": "https://info.stu.edu.cn/info/1357/2088.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1357-2088.txt"
+    },
+    {
+      "id": "1357-2089",
+      "category": "学生工作",
+      "title": "中国银行国家助学贷款业务申请审批表",
+      "url": "https://info.stu.edu.cn/info/1357/2089.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1357-2089.txt"
+    },
+    {
+      "id": "1357-2152",
+      "category": "学生工作",
+      "title": "校团委相关制度及流程",
+      "url": "https://info.stu.edu.cn/info/1357/2152.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1357-2152.txt"
+    },
+    {
+      "id": "1362-1916",
+      "category": "安全管理",
+      "title": "计量认证委托流程",
+      "url": "https://info.stu.edu.cn/info/1362/1916.htm",
+      "chars": 59,
+      "thin": true,
+      "file": "data/extracted/1362-1916.txt"
+    },
+    {
+      "id": "1362-1917",
+      "category": "安全管理",
+      "title": "接处警工作流程",
+      "url": "https://info.stu.edu.cn/info/1362/1917.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1362-1917.txt"
+    },
+    {
+      "id": "1362-1919",
+      "category": "安全管理",
+      "title": "汕头大学测试中心校外样品受理和检测流程",
+      "url": "https://info.stu.edu.cn/info/1362/1919.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1362-1919.txt"
+    },
+    {
+      "id": "1362-1922",
+      "category": "安全管理",
+      "title": "拾获财物管理流程",
+      "url": "https://info.stu.edu.cn/info/1362/1922.htm",
+      "chars": 176,
+      "thin": false,
+      "file": "data/extracted/1362-1922.txt"
+    },
+    {
+      "id": "1362-1923",
+      "category": "安全管理",
+      "title": "校内样品测试流程",
+      "url": "https://info.stu.edu.cn/info/1362/1923.htm",
+      "chars": 59,
+      "thin": true,
+      "file": "data/extracted/1362-1923.txt"
+    },
+    {
+      "id": "1361-2005",
+      "category": "审计工作",
+      "title": "汕头大学财务预算执行和决算审计流程图",
+      "url": "https://info.stu.edu.cn/info/1361/2005.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1361-2005.txt"
+    },
+    {
+      "id": "1351-2156",
+      "category": "宣传工作",
+      "title": "汕头大学报学校新闻网新闻中心采集与发布工作流程",
+      "url": "https://info.stu.edu.cn/info/1351/2156.htm",
+      "chars": 191,
+      "thin": false,
+      "file": "data/extracted/1351-2156.txt"
+    },
+    {
+      "id": "1351-2157",
+      "category": "宣传工作",
+      "title": "汕头大学校园宣传品布置申请流程",
+      "url": "https://info.stu.edu.cn/info/1351/2157.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1351-2157.txt"
+    },
+    {
+      "id": "1351-2158",
+      "category": "宣传工作",
+      "title": "汕头大学哲学社会科学讲座论坛审批流程",
+      "url": "https://info.stu.edu.cn/info/1351/2158.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1351-2158.txt"
+    },
+    {
+      "id": "1363-1940",
+      "category": "对外交流与合作",
+      "title": "因公出国（境）人员申报表-教职工适用",
+      "url": "https://info.stu.edu.cn/info/1363/1940.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1363-1940.txt"
+    },
+    {
+      "id": "1363-1941",
+      "category": "对外交流与合作",
+      "title": "因公出国（境）任务和经费预算审批意见表",
+      "url": "https://info.stu.edu.cn/info/1363/1941.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1363-1941.txt"
+    },
+    {
+      "id": "1363-1942",
+      "category": "对外交流与合作",
+      "title": "因公临时出国人员备案表",
+      "url": "https://info.stu.edu.cn/info/1363/1942.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1363-1942.txt"
+    },
+    {
+      "id": "1363-1943",
+      "category": "对外交流与合作",
+      "title": "因公临时赴港澳人员备案表",
+      "url": "https://info.stu.edu.cn/info/1363/1943.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1363-1943.txt"
+    },
+    {
+      "id": "1363-1944",
+      "category": "对外交流与合作",
+      "title": "因公临时赴台人员备案表",
+      "url": "https://info.stu.edu.cn/info/1363/1944.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1363-1944.txt"
+    },
+    {
+      "id": "1363-1945",
+      "category": "对外交流与合作",
+      "title": "出访人员出国（境）提醒教育确认书",
+      "url": "https://info.stu.edu.cn/info/1363/1945.htm",
+      "chars": 184,
+      "thin": false,
+      "file": "data/extracted/1363-1945.txt"
+    },
+    {
+      "id": "1363-1947",
+      "category": "对外交流与合作",
+      "title": "学生因公出国（境）申请报告-学生适用",
+      "url": "https://info.stu.edu.cn/info/1363/1947.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1363-1947.txt"
+    },
+    {
+      "id": "1363-1948",
+      "category": "对外交流与合作",
+      "title": "出国（境）学习项目学生离返校备案表",
+      "url": "https://info.stu.edu.cn/info/1363/1948.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1363-1948.txt"
+    },
+    {
+      "id": "1363-1949",
+      "category": "对外交流与合作",
+      "title": "外国人来华工作许可申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1949.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1363-1949.txt"
+    },
+    {
+      "id": "1363-1950",
+      "category": "对外交流与合作",
+      "title": "境外人员临时住宿登记表",
+      "url": "https://info.stu.edu.cn/info/1363/1950.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1363-1950.txt"
+    },
+    {
+      "id": "1363-1951",
+      "category": "对外交流与合作",
+      "title": "外国人签证证件申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1951.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1363-1951.txt"
+    },
+    {
+      "id": "1363-1952",
+      "category": "对外交流与合作",
+      "title": "汕头大学外国学生入学申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1952.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1363-1952.txt"
+    },
+    {
+      "id": "1363-1954",
+      "category": "对外交流与合作",
+      "title": "汕头大学外国学生入学审批表",
+      "url": "https://info.stu.edu.cn/info/1363/1954.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1363-1954.txt"
+    },
+    {
+      "id": "1363-1955",
+      "category": "对外交流与合作",
+      "title": "出国（境）学习项目校内申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1955.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1363-1955.txt"
+    },
+    {
+      "id": "1363-1956",
+      "category": "对外交流与合作",
+      "title": "出国（境）学习奖学金申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1956.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1363-1956.txt"
+    },
+    {
+      "id": "1363-1958",
+      "category": "对外交流与合作",
+      "title": "外国留学人员来华签证申请表",
+      "url": "https://info.stu.edu.cn/info/1363/1958.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1363-1958.txt"
+    },
+    {
+      "id": "1353-1959",
+      "category": "工会工作",
+      "title": "教代会及工代会工作流程",
+      "url": "https://info.stu.edu.cn/info/1353/1959.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1353-1959.txt"
+    },
+    {
+      "id": "1353-1961",
+      "category": "工会工作",
+      "title": "汕头大学教职工申诉申请书",
+      "url": "https://info.stu.edu.cn/info/1353/1961.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1353-1961.txt"
+    },
+    {
+      "id": "1353-1962",
+      "category": "工会工作",
+      "title": "申请材料副本送达签收单",
+      "url": "https://info.stu.edu.cn/info/1353/1962.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1353-1962.txt"
+    },
+    {
+      "id": "1353-1963",
+      "category": "工会工作",
+      "title": "申诉处理延期通知书",
+      "url": "https://info.stu.edu.cn/info/1353/1963.htm",
+      "chars": 177,
+      "thin": false,
+      "file": "data/extracted/1353-1963.txt"
+    },
+    {
+      "id": "1353-1964",
+      "category": "工会工作",
+      "title": "申诉答辩通知书",
+      "url": "https://info.stu.edu.cn/info/1353/1964.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1353-1964.txt"
+    },
+    {
+      "id": "1353-1965",
+      "category": "工会工作",
+      "title": "文件送达回证",
+      "url": "https://info.stu.edu.cn/info/1353/1965.htm",
+      "chars": 174,
+      "thin": false,
+      "file": "data/extracted/1353-1965.txt"
+    },
+    {
+      "id": "1353-1966",
+      "category": "工会工作",
+      "title": "教职工申诉申请反馈通知书",
+      "url": "https://info.stu.edu.cn/info/1353/1966.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1353-1966.txt"
+    },
+    {
+      "id": "1353-1967",
+      "category": "工会工作",
+      "title": "教职工校内申诉流程",
+      "url": "https://info.stu.edu.cn/info/1353/1967.htm",
+      "chars": 177,
+      "thin": false,
+      "file": "data/extracted/1353-1967.txt"
+    },
+    {
+      "id": "1353-1969",
+      "category": "工会工作",
+      "title": "汕头大学教职工婚育慰问金申领表",
+      "url": "https://info.stu.edu.cn/info/1353/1969.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1353-1969.txt"
+    },
+    {
+      "id": "1353-1970",
+      "category": "工会工作",
+      "title": "教职工婚育慰问金申请流程",
+      "url": "https://info.stu.edu.cn/info/1353/1970.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1353-1970.txt"
+    },
+    {
+      "id": "1353-1972",
+      "category": "工会工作",
+      "title": "汕头大学教职工慰问金申领表",
+      "url": "https://info.stu.edu.cn/info/1353/1972.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1353-1972.txt"
+    },
+    {
+      "id": "1353-1973",
+      "category": "工会工作",
+      "title": "教职工慰问补助申请流程",
+      "url": "https://info.stu.edu.cn/info/1353/1973.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1353-1973.txt"
+    },
+    {
+      "id": "1353-3184",
+      "category": "工会工作",
+      "title": "中国教育工会汕头大学委员会日常报销单",
+      "url": "https://info.stu.edu.cn/info/1353/3184.htm",
+      "chars": 69,
+      "thin": true,
+      "file": "data/extracted/1353-3184.txt"
+    },
+    {
+      "id": "1353-3194",
+      "category": "工会工作",
+      "title": "工会经费使用报销流程",
+      "url": "https://info.stu.edu.cn/info/1353/3194.htm",
+      "chars": 1444,
+      "thin": false,
+      "file": "data/extracted/1353-3194.txt"
+    },
+    {
+      "id": "1353-4234",
+      "category": "工会工作",
+      "title": "申请加入工会会员工作流程",
+      "url": "https://info.stu.edu.cn/info/1353/4234.htm",
+      "chars": 166,
+      "thin": false,
+      "file": "data/extracted/1353-4234.txt"
+    },
+    {
+      "id": "1354-2066",
+      "category": "教学管理",
+      "title": "汕头大学教师申请招收研究生流程",
+      "url": "https://info.stu.edu.cn/info/1354/2066.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1354-2066.txt"
+    },
+    {
+      "id": "1354-2067",
+      "category": "教学管理",
+      "title": "汕头大学硕士研究生申请学位流程",
+      "url": "https://info.stu.edu.cn/info/1354/2067.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1354-2067.txt"
+    },
+    {
+      "id": "1354-2068",
+      "category": "教学管理",
+      "title": "汕头大学博士研究生申请学位流程",
+      "url": "https://info.stu.edu.cn/info/1354/2068.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1354-2068.txt"
+    },
+    {
+      "id": "1354-2069",
+      "category": "教学管理",
+      "title": "汕头大学缴费注册管理流程",
+      "url": "https://info.stu.edu.cn/info/1354/2069.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1354-2069.txt"
+    },
+    {
+      "id": "1354-2153",
+      "category": "教学管理",
+      "title": "教务处教学管理工作手册",
+      "url": "https://info.stu.edu.cn/info/1354/2153.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1354-2153.txt"
+    },
+    {
+      "id": "1364-2006",
+      "category": "校友工作",
+      "title": "校友返校聚会登记表",
+      "url": "https://info.stu.edu.cn/info/1364/2006.htm",
+      "chars": 177,
+      "thin": false,
+      "file": "data/extracted/1364-2006.txt"
+    },
+    {
+      "id": "1364-2007",
+      "category": "校友工作",
+      "title": "校友返校聚会服务指南",
+      "url": "https://info.stu.edu.cn/info/1364/2007.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1364-2007.txt"
+    },
+    {
+      "id": "1364-2008",
+      "category": "校友工作",
+      "title": "校友返校拍摄婚纱照申请表",
+      "url": "https://info.stu.edu.cn/info/1364/2008.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1364-2008.txt"
+    },
+    {
+      "id": "1364-2009",
+      "category": "校友工作",
+      "title": "校友林树木认养费付款登记表",
+      "url": "https://info.stu.edu.cn/info/1364/2009.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1364-2009.txt"
+    },
+    {
+      "id": "1364-2010",
+      "category": "校友工作",
+      "title": "校友龙卡办理指南",
+      "url": "https://info.stu.edu.cn/info/1364/2010.htm",
+      "chars": 176,
+      "thin": false,
+      "file": "data/extracted/1364-2010.txt"
+    },
+    {
+      "id": "1355-1985",
+      "category": "科学研究",
+      "title": "技术开发（合作）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1985.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1355-1985.txt"
+    },
+    {
+      "id": "1355-1986",
+      "category": "科学研究",
+      "title": "技术开发（委托）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1986.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1355-1986.txt"
+    },
+    {
+      "id": "1355-1987",
+      "category": "科学研究",
+      "title": "技术转让（专利权）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1987.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1355-1987.txt"
+    },
+    {
+      "id": "1355-1988",
+      "category": "科学研究",
+      "title": "技术转让（专利申请权）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1988.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1355-1988.txt"
+    },
+    {
+      "id": "1355-1989",
+      "category": "科学研究",
+      "title": "技术转让（专利实施许可）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1989.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1355-1989.txt"
+    },
+    {
+      "id": "1355-1990",
+      "category": "科学研究",
+      "title": "技术转让（技术秘密）合同",
+      "url": "https://info.stu.edu.cn/info/1355/1990.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1355-1990.txt"
+    },
+    {
+      "id": "1355-1991",
+      "category": "科学研究",
+      "title": "技术咨询合同",
+      "url": "https://info.stu.edu.cn/info/1355/1991.htm",
+      "chars": 174,
+      "thin": false,
+      "file": "data/extracted/1355-1991.txt"
+    },
+    {
+      "id": "1355-1992",
+      "category": "科学研究",
+      "title": "技术服务合同",
+      "url": "https://info.stu.edu.cn/info/1355/1992.htm",
+      "chars": 174,
+      "thin": false,
+      "file": "data/extracted/1355-1992.txt"
+    },
+    {
+      "id": "1355-1993",
+      "category": "科学研究",
+      "title": "汕头大学科研启动经费项目申请（任务）书（自然科学类）-模板",
+      "url": "https://info.stu.edu.cn/info/1355/1993.htm",
+      "chars": 197,
+      "thin": false,
+      "file": "data/extracted/1355-1993.txt"
+    },
+    {
+      "id": "1355-1995",
+      "category": "科学研究",
+      "title": "汕头大学科研启动经费项目申请任务书（人文社科类）-模板",
+      "url": "https://info.stu.edu.cn/info/1355/1995.htm",
+      "chars": 195,
+      "thin": false,
+      "file": "data/extracted/1355-1995.txt"
+    },
+    {
+      "id": "1355-1996",
+      "category": "科学研究",
+      "title": "汕头大学横向科研项目结题表",
+      "url": "https://info.stu.edu.cn/info/1355/1996.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1355-1996.txt"
+    },
+    {
+      "id": "1355-1997",
+      "category": "科学研究",
+      "title": "共同申请知识产权协议书",
+      "url": "https://info.stu.edu.cn/info/1355/1997.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1355-1997.txt"
+    },
+    {
+      "id": "1355-1998",
+      "category": "科学研究",
+      "title": "汕头大学专利申请审批表",
+      "url": "https://info.stu.edu.cn/info/1355/1998.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1355-1998.txt"
+    },
+    {
+      "id": "1355-1999",
+      "category": "科学研究",
+      "title": "汕头大学学术单位举办学术会议审批表",
+      "url": "https://info.stu.edu.cn/info/1355/1999.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1355-1999.txt"
+    },
+    {
+      "id": "1355-2000",
+      "category": "科学研究",
+      "title": "汕头大学涉外科研交流合作活动审批表",
+      "url": "https://info.stu.edu.cn/info/1355/2000.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1355-2000.txt"
+    },
+    {
+      "id": "1355-2001",
+      "category": "科学研究",
+      "title": "汕头大学学术著作出版基金资助申请表",
+      "url": "https://info.stu.edu.cn/info/1355/2001.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1355-2001.txt"
+    },
+    {
+      "id": "1355-2003",
+      "category": "科学研究",
+      "title": "汕头大学科技成果转化项目审批表",
+      "url": "https://info.stu.edu.cn/info/1355/2003.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1355-2003.txt"
+    },
+    {
+      "id": "1352-1978",
+      "category": "纪检监察工作",
+      "title": "信访工作流程图",
+      "url": "https://info.stu.edu.cn/info/1352/1978.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1352-1978.txt"
+    },
+    {
+      "id": "1350-2019",
+      "category": "组织工作",
+      "title": "汕头大学发展党员工作流程图",
+      "url": "https://info.stu.edu.cn/info/1350/2019.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1350-2019.txt"
+    },
+    {
+      "id": "1350-2020",
+      "category": "组织工作",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1350/2020.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1350-2020.txt"
+    },
+    {
+      "id": "1348-2018",
+      "category": "综合管理",
+      "title": "校办发文流程图",
+      "url": "https://info.stu.edu.cn/info/1348/2018.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1348-2018.txt"
+    },
+    {
+      "id": "1365-1983",
+      "category": "综合管理",
+      "title": "汕头大学缴费注册管理流程",
+      "url": "https://info.stu.edu.cn/info/1365/1983.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1365-1983.txt"
+    },
+    {
+      "id": "1365-2154",
+      "category": "综合管理",
+      "title": "教务处教学管理工作手册",
+      "url": "https://info.stu.edu.cn/info/1365/2154.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1365-2154.txt"
+    },
+    {
+      "id": "1366-1979",
+      "category": "综合管理",
+      "title": "汕头大学博士研究生申请学位流程",
+      "url": "https://info.stu.edu.cn/info/1366/1979.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1366-1979.txt"
+    },
+    {
+      "id": "1366-1980",
+      "category": "综合管理",
+      "title": "汕头大学硕士研究生申请学位流程",
+      "url": "https://info.stu.edu.cn/info/1366/1980.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1366-1980.txt"
+    },
+    {
+      "id": "1366-1981",
+      "category": "综合管理",
+      "title": "汕头大学教师申请招收研究生流程",
+      "url": "https://info.stu.edu.cn/info/1366/1981.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1366-1981.txt"
+    },
+    {
+      "id": "1366-2155",
+      "category": "综合管理",
+      "title": "教务处教学管理工作手册",
+      "url": "https://info.stu.edu.cn/info/1366/2155.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1366-2155.txt"
+    },
+    {
+      "id": "1367-2062",
+      "category": "综合管理",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1367/2062.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1367-2062.txt"
+    },
+    {
+      "id": "1368-2063",
+      "category": "综合管理",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1368/2063.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1368-2063.txt"
+    },
+    {
+      "id": "1369-2064",
+      "category": "综合管理",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1369/2064.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1369-2064.txt"
+    },
+    {
+      "id": "1370-2065",
+      "category": "综合管理",
+      "title": "各项业务办事指南汇编",
+      "url": "https://info.stu.edu.cn/info/1370/2065.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1370-2065.txt"
+    },
+    {
+      "id": "1372-2046",
+      "category": "综合管理",
+      "title": "团费收缴、团籍注册流程图",
+      "url": "https://info.stu.edu.cn/info/1372/2046.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1372-2046.txt"
+    },
+    {
+      "id": "1372-2047",
+      "category": "综合管理",
+      "title": "团员组织关系转接工作流程图",
+      "url": "https://info.stu.edu.cn/info/1372/2047.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1372-2047.txt"
+    },
+    {
+      "id": "1372-2151",
+      "category": "综合管理",
+      "title": "校团委相关制度及流程",
+      "url": "https://info.stu.edu.cn/info/1372/2151.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1372-2151.txt"
+    },
+    {
+      "id": "1373-2024",
+      "category": "综合管理",
+      "title": "国家开发银行生源地信用助学贷款管理流程",
+      "url": "https://info.stu.edu.cn/info/1373/2024.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1373-2024.txt"
+    },
+    {
+      "id": "1373-2025",
+      "category": "综合管理",
+      "title": "汕头大学校园地国家助学贷款管理流程",
+      "url": "https://info.stu.edu.cn/info/1373/2025.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1373-2025.txt"
+    },
+    {
+      "id": "1373-2026",
+      "category": "综合管理",
+      "title": "中国银行国家助学贷款业务申请审批表",
+      "url": "https://info.stu.edu.cn/info/1373/2026.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1373-2026.txt"
+    },
+    {
+      "id": "1373-2027",
+      "category": "综合管理",
+      "title": "广东省家庭经济困难学生认定工作指导意见",
+      "url": "https://info.stu.edu.cn/info/1373/2027.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1373-2027.txt"
+    },
+    {
+      "id": "1373-2028",
+      "category": "综合管理",
+      "title": "广东省家庭经济困难学生认定申请表（含填表说明）",
+      "url": "https://info.stu.edu.cn/info/1373/2028.htm",
+      "chars": 191,
+      "thin": false,
+      "file": "data/extracted/1373-2028.txt"
+    },
+    {
+      "id": "1373-2029",
+      "category": "综合管理",
+      "title": "汕头大学家庭经济困难学生认定管理流程",
+      "url": "https://info.stu.edu.cn/info/1373/2029.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1373-2029.txt"
+    },
+    {
+      "id": "1373-2030",
+      "category": "综合管理",
+      "title": "勤工助学学生岗前培训暨安全教育记录表",
+      "url": "https://info.stu.edu.cn/info/1373/2030.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1373-2030.txt"
+    },
+    {
+      "id": "1373-2031",
+      "category": "综合管理",
+      "title": "汕头大学勤工助学管理流程",
+      "url": "https://info.stu.edu.cn/info/1373/2031.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1373-2031.txt"
+    },
+    {
+      "id": "1373-2032",
+      "category": "综合管理",
+      "title": "汕头大学校内勤工助学岗位设置申请表",
+      "url": "https://info.stu.edu.cn/info/1373/2032.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1373-2032.txt"
+    },
+    {
+      "id": "1373-2033",
+      "category": "综合管理",
+      "title": "汕头大学学生校外勤工助学岗位登记表",
+      "url": "https://info.stu.edu.cn/info/1373/2033.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1373-2033.txt"
+    },
+    {
+      "id": "1373-2050",
+      "category": "综合管理",
+      "title": "优秀学生奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1373/2050.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1373-2050.txt"
+    },
+    {
+      "id": "1373-2051",
+      "category": "综合管理",
+      "title": "体育精神奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1373/2051.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1373-2051.txt"
+    },
+    {
+      "id": "1373-2052",
+      "category": "综合管理",
+      "title": "汕头大学奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1373/2052.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1373-2052.txt"
+    },
+    {
+      "id": "1373-2053",
+      "category": "综合管理",
+      "title": "企业及个人捐助奖学金评选工作流程",
+      "url": "https://info.stu.edu.cn/info/1373/2053.htm",
+      "chars": 184,
+      "thin": false,
+      "file": "data/extracted/1373-2053.txt"
+    },
+    {
+      "id": "1373-2054",
+      "category": "综合管理",
+      "title": "国家奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1373/2054.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1373-2054.txt"
+    },
+    {
+      "id": "1374-2034",
+      "category": "综合管理",
+      "title": "汕头大学学生校外勤工助学岗位登记表",
+      "url": "https://info.stu.edu.cn/info/1374/2034.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1374-2034.txt"
+    },
+    {
+      "id": "1374-2035",
+      "category": "综合管理",
+      "title": "汕头大学校内勤工助学岗位设置申请表",
+      "url": "https://info.stu.edu.cn/info/1374/2035.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1374-2035.txt"
+    },
+    {
+      "id": "1374-2036",
+      "category": "综合管理",
+      "title": "汕头大学勤工助学管理流程",
+      "url": "https://info.stu.edu.cn/info/1374/2036.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1374-2036.txt"
+    },
+    {
+      "id": "1374-2037",
+      "category": "综合管理",
+      "title": "勤工助学学生岗前培训暨安全教育记录表",
+      "url": "https://info.stu.edu.cn/info/1374/2037.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1374-2037.txt"
+    },
+    {
+      "id": "1374-2038",
+      "category": "综合管理",
+      "title": "汕头大学家庭经济困难学生认定管理流程",
+      "url": "https://info.stu.edu.cn/info/1374/2038.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1374-2038.txt"
+    },
+    {
+      "id": "1374-2039",
+      "category": "综合管理",
+      "title": "广东省家庭经济困难学生认定申请表（含填表说明）",
+      "url": "https://info.stu.edu.cn/info/1374/2039.htm",
+      "chars": 191,
+      "thin": false,
+      "file": "data/extracted/1374-2039.txt"
+    },
+    {
+      "id": "1374-2040",
+      "category": "综合管理",
+      "title": "广东省家庭经济困难学生认定工作指导意见",
+      "url": "https://info.stu.edu.cn/info/1374/2040.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1374-2040.txt"
+    },
+    {
+      "id": "1374-2041",
+      "category": "综合管理",
+      "title": "中国银行国家助学贷款业务申请审批表",
+      "url": "https://info.stu.edu.cn/info/1374/2041.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1374-2041.txt"
+    },
+    {
+      "id": "1374-2042",
+      "category": "综合管理",
+      "title": "汕头大学校园地国家助学贷款管理流程",
+      "url": "https://info.stu.edu.cn/info/1374/2042.htm",
+      "chars": 185,
+      "thin": false,
+      "file": "data/extracted/1374-2042.txt"
+    },
+    {
+      "id": "1374-2043",
+      "category": "综合管理",
+      "title": "国家开发银行生源地信用助学贷款管理流程",
+      "url": "https://info.stu.edu.cn/info/1374/2043.htm",
+      "chars": 187,
+      "thin": false,
+      "file": "data/extracted/1374-2043.txt"
+    },
+    {
+      "id": "1374-2056",
+      "category": "综合管理",
+      "title": "国家奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1374/2056.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1374-2056.txt"
+    },
+    {
+      "id": "1374-2057",
+      "category": "综合管理",
+      "title": "企业及个人捐助奖学金评选工作流程",
+      "url": "https://info.stu.edu.cn/info/1374/2057.htm",
+      "chars": 184,
+      "thin": false,
+      "file": "data/extracted/1374-2057.txt"
+    },
+    {
+      "id": "1374-2058",
+      "category": "综合管理",
+      "title": "汕头大学奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1374/2058.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1374-2058.txt"
+    },
+    {
+      "id": "1374-2059",
+      "category": "综合管理",
+      "title": "体育精神奖章评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1374/2059.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1374-2059.txt"
+    },
+    {
+      "id": "1374-2060",
+      "category": "综合管理",
+      "title": "优秀学生奖学金评选工作流程图",
+      "url": "https://info.stu.edu.cn/info/1374/2060.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1374-2060.txt"
+    },
+    {
+      "id": "1349-2011",
+      "category": "行政工作",
+      "title": "法定代表人身份证使用申请流程图",
+      "url": "https://info.stu.edu.cn/info/1349/2011.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1349-2011.txt"
+    },
+    {
+      "id": "1349-2012",
+      "category": "行政工作",
+      "title": "汕头大学合同管理流程图",
+      "url": "https://info.stu.edu.cn/info/1349/2012.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1349-2012.txt"
+    },
+    {
+      "id": "1349-2013",
+      "category": "行政工作",
+      "title": "事业单位法人证书使用申请流程图",
+      "url": "https://info.stu.edu.cn/info/1349/2013.htm",
+      "chars": 183,
+      "thin": false,
+      "file": "data/extracted/1349-2013.txt"
+    },
+    {
+      "id": "1359-1924",
+      "category": "财务管理",
+      "title": "出纳业务管理流程图",
+      "url": "https://info.stu.edu.cn/info/1359/1924.htm",
+      "chars": 177,
+      "thin": false,
+      "file": "data/extracted/1359-1924.txt"
+    },
+    {
+      "id": "1359-1925",
+      "category": "财务管理",
+      "title": "汕头大学学生缴费指引",
+      "url": "https://info.stu.edu.cn/info/1359/1925.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1359-1925.txt"
+    },
+    {
+      "id": "1359-1926",
+      "category": "财务管理",
+      "title": "公务接待清单",
+      "url": "https://info.stu.edu.cn/info/1359/1926.htm",
+      "chars": 174,
+      "thin": false,
+      "file": "data/extracted/1359-1926.txt"
+    },
+    {
+      "id": "1359-1927",
+      "category": "财务管理",
+      "title": "票据管理流程图",
+      "url": "https://info.stu.edu.cn/info/1359/1927.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1359-1927.txt"
+    },
+    {
+      "id": "1359-1928",
+      "category": "财务管理",
+      "title": "汕头大学财务票据领用登记表",
+      "url": "https://info.stu.edu.cn/info/1359/1928.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1359-1928.txt"
+    },
+    {
+      "id": "1359-1929",
+      "category": "财务管理",
+      "title": "汕头大学请假(出差)审批表",
+      "url": "https://info.stu.edu.cn/info/1359/1929.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1359-1929.txt"
+    },
+    {
+      "id": "1359-1930",
+      "category": "财务管理",
+      "title": "预算编制流程图",
+      "url": "https://info.stu.edu.cn/info/1359/1930.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1359-1930.txt"
+    },
+    {
+      "id": "1359-1931",
+      "category": "财务管理",
+      "title": "预算收支流程图",
+      "url": "https://info.stu.edu.cn/info/1359/1931.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1359-1931.txt"
+    },
+    {
+      "id": "1359-2055",
+      "category": "财务管理",
+      "title": "汕头大学缴费注册管理流程",
+      "url": "https://info.stu.edu.cn/info/1359/2055.htm",
+      "chars": 180,
+      "thin": false,
+      "file": "data/extracted/1359-2055.txt"
+    },
+    {
+      "id": "1359-2172",
+      "category": "财务管理",
+      "title": "劳务费申请发放流程图",
+      "url": "https://info.stu.edu.cn/info/1359/2172.htm",
+      "chars": 178,
+      "thin": false,
+      "file": "data/extracted/1359-2172.txt"
+    },
+    {
+      "id": "1359-2173",
+      "category": "财务管理",
+      "title": "日常报销流程图",
+      "url": "https://info.stu.edu.cn/info/1359/2173.htm",
+      "chars": 175,
+      "thin": false,
+      "file": "data/extracted/1359-2173.txt"
+    },
+    {
+      "id": "1359-2174",
+      "category": "财务管理",
+      "title": "汕头大学发票开具流程图",
+      "url": "https://info.stu.edu.cn/info/1359/2174.htm",
+      "chars": 179,
+      "thin": false,
+      "file": "data/extracted/1359-2174.txt"
+    },
+    {
+      "id": "1359-2175",
+      "category": "财务管理",
+      "title": "汕头大学学生缴纳学杂费流程图",
+      "url": "https://info.stu.edu.cn/info/1359/2175.htm",
+      "chars": 182,
+      "thin": false,
+      "file": "data/extracted/1359-2175.txt"
+    },
+    {
+      "id": "1358-2015",
+      "category": "资产管理",
+      "title": "教工住房办理入住、退宿流程",
+      "url": "https://info.stu.edu.cn/info/1358/2015.htm",
+      "chars": 181,
+      "thin": false,
+      "file": "data/extracted/1358-2015.txt"
+    },
+    {
+      "id": "1358-2016",
+      "category": "资产管理",
+      "title": "汕头大学工程项目采购与招标工作流程图",
+      "url": "https://info.stu.edu.cn/info/1358/2016.htm",
+      "chars": 186,
+      "thin": false,
+      "file": "data/extracted/1358-2016.txt"
+    },
+    {
+      "id": "1358-2017",
+      "category": "资产管理",
+      "title": "汕头大学货物、服务项目采购与招标工作流程图",
+      "url": "https://info.stu.edu.cn/info/1358/2017.htm",
+      "chars": 189,
+      "thin": false,
+      "file": "data/extracted/1358-2017.txt"
+    }
+  ]
+}
