@@ -1,0 +1,8 @@
+.venv/
+.hf_cache/
+__pycache__/
+*.pyc
+eval/results/
+scripts/
+node_modules/
+data/raw/
