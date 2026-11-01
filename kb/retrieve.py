@@ -25,7 +25,13 @@ def _lazy_init():
     if _store is not None:
         return
     from sentence_transformers import SentenceTransformer
-    _model = SentenceTransformer(EMBED_MODEL)
+    # 模型加载：魔搭容器里优先走 ModelScope 源（内网秒级）；
+    # 本地环境没装 modelscope 包 / 下载失败时，退回 HF 镜像源
+    try:
+        from modelscope import snapshot_download
+        _model = SentenceTransformer(snapshot_download(EMBED_MODEL))
+    except Exception:
+        _model = SentenceTransformer(EMBED_MODEL)
     chunks = json.loads((STORE / "chunks.json").read_text(encoding="utf-8"))
     vecs = np.load(STORE / "vectors.npy")
     _store = (chunks, vecs)

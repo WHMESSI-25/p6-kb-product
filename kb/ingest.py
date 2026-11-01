@@ -78,7 +78,12 @@ def build():
 
     from sentence_transformers import SentenceTransformer
     print(f"加载向量模型 {EMBED_MODEL} ……")
-    model = SentenceTransformer(EMBED_MODEL)
+    # 与 retrieve.py 同策略：魔搭容器走 ModelScope 源，本地走 HF 镜像源
+    try:
+        from modelscope import snapshot_download
+        model = SentenceTransformer(snapshot_download(EMBED_MODEL))
+    except Exception:
+        model = SentenceTransformer(EMBED_MODEL)
     print(f"向量化 {len(chunks)} 块 ……")
     vecs = model.encode([c["text"] for c in chunks], batch_size=64,
                         normalize_embeddings=True, show_progress_bar=False)
