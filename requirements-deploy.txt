@@ -1,0 +1,7 @@
+# 魔搭创空间（Gradio SDK）部署专用依赖：不带 fastapi/uvicorn，界面由 gradio 提供
+sentence-transformers>=3.0
+jieba>=0.42
+rank_bm25>=0.2.2
+numpy
+# 容器里从魔搭源拉向量模型（同网、秒级）；缺了这行会退回 hf 源并卡十几分钟
+modelscope>=1.15

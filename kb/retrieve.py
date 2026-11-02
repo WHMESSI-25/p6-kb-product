@@ -6,10 +6,11 @@
 展示与拒答闸门仍用向量相似度（与轮0/轮1 口径一致）。
 """
 import json
+import time
 
 import numpy as np
 
-from .config import EMBED_MODEL, NO_HIT_THRESHOLD, QUERY_INSTRUCTION, STORE, TOP_K
+from .config import EMBED_MODEL, MODEL_DIR, NO_HIT_THRESHOLD, QUERY_INSTRUCTION, STORE, TOP_K
 
 _model = None
 _store = None      # (chunks, vecs)
@@ -20,25 +21,56 @@ RRF_K = 60         # RRF 常数（标准值），越大排名差异越平缓
 POOL = 50          # 每路取前多少名参与融合
 
 
+def _load_embedder():
+    """向量模型加载：本地目录 → 魔搭源 → HF 镜像
+
+    2026-11-02 线上教训：容器里只有 HF 一条路时，首次回答卡了 888 秒（下载超时）。
+    现在三级降级，任一路径可用即可，且每级都有明确日志，便于看运行日志定位。
+    """
+    from sentence_transformers import SentenceTransformer
+
+    t0 = time.time()
+    # ① 仓库内置模型目录：零网络，最稳
+    if MODEL_DIR.exists() and any(MODEL_DIR.iterdir()):
+        m = SentenceTransformer(str(MODEL_DIR))
+        print(f"[model] 来源=本地目录 {MODEL_DIR} 用时={time.time() - t0:.1f}s", flush=True)
+        return m
+    # ② 魔搭源：容器与 modelscope.cn 同网，正常几秒到几十秒
+    try:
+        from modelscope import snapshot_download
+        path = snapshot_download(EMBED_MODEL)
+        m = SentenceTransformer(path)
+        print(f"[model] 来源=魔搭源 {path} 用时={time.time() - t0:.1f}s", flush=True)
+        return m
+    except Exception as e:
+        print(f"[model] 魔搭源不可用，转 HF 镜像：{type(e).__name__}: {e}", flush=True)
+    # ③ HF 镜像：超时已在 config 收紧，不可达会快速失败而不是卡死
+    m = SentenceTransformer(EMBED_MODEL)
+    print(f"[model] 来源=HF 镜像 用时={time.time() - t0:.1f}s", flush=True)
+    return m
+
+
 def _lazy_init():
     global _model, _store, _bm25, _lcut
     if _store is not None:
         return
-    from sentence_transformers import SentenceTransformer
-    # 模型加载：魔搭容器里优先走 ModelScope 源（内网秒级）；
-    # 本地环境没装 modelscope 包 / 下载失败时，退回 HF 镜像源
-    try:
-        from modelscope import snapshot_download
-        _model = SentenceTransformer(snapshot_download(EMBED_MODEL))
-    except Exception:
-        _model = SentenceTransformer(EMBED_MODEL)
+    t0 = time.time()
+    _model = _load_embedder()
     chunks = json.loads((STORE / "chunks.json").read_text(encoding="utf-8"))
-    vecs = np.load(STORE / "vectors.npy")
+    # 向量库两种存法：本地/开发机用 vectors.npy；魔搭仓库里存 vectors.npz
+    # （平台 .gitattributes 强制 *.npy 走 LFS，npz 走普通存储，克隆下来一定能拿到）
+    npy, npz = STORE / "vectors.npy", STORE / "vectors.npz"
+    if npy.exists():
+        vecs = np.load(npy)
+    else:
+        with np.load(npz) as z:
+            vecs = z["vectors"]
     _store = (chunks, vecs)
     import jieba
     from rank_bm25 import BM25Okapi
     _lcut = jieba.lcut
     _bm25 = BM25Okapi([_lcut(c["text"]) for c in chunks])
+    print(f"[store] {len(chunks)} 块向量就绪，初始化总用时={time.time() - t0:.1f}s", flush=True)
 
 
 def search(query, k=TOP_K):

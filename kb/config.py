@@ -8,9 +8,16 @@ ROOT = Path(__file__).resolve().parent.parent
 # HuggingFace 缓存放 D 盘 + 大陆镜像（必须在 import transformers 前设置）
 os.environ.setdefault("HF_HOME", str(ROOT / ".hf_cache"))
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+# 下载超时收紧（2026-11-02 线上踩坑）：容器里 hf 源不可达时，原默认超时会卡十几分钟，
+# 收到 15 秒后快速失败，好让上层立刻切到别的加载路径
+os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "15")
+os.environ.setdefault("HF_HUB_ETAG_TIMEOUT", "10")
+os.environ.setdefault("HF_HUB_DISABLE_TELEMETRY", "1")
 
 # ===== 向量模型与检索参数 =====
 EMBED_MODEL = "BAAI/bge-small-zh-v1.5"          # 本地中文向量模型，约 95MB
+# 可选：仓库内置的模型目录。存在则优先用（零网络，冷启动最快）；不存在则走魔搭源/HF
+MODEL_DIR = ROOT / "models" / "bge-small-zh-v1.5"
 QUERY_INSTRUCTION = "为这个句子生成表示以用于检索相关文章："  # bge 中文模型检索时查询侧加指令
 CHUNK_SIZE = 500          # 每块字符数（调优候选变量）
 CHUNK_OVERLAP = 100       # 相邻块重叠字符数（调优候选变量）
