@@ -18,19 +18,13 @@ done
 cp "$SRC/app_gradio.py" "$DEPLOY/app.py"
 cp "$SRC/requirements-deploy.txt" "$DEPLOY/requirements.txt"
 
-echo "== 同步向量库（npz 走普通存储，避免平台把 npy 强制转 LFS 后克隆拿不到）=="
+echo "== 同步向量库 =="
+# 平台 .gitattributes 把 *.npy/*.npz 强制转 LFS，而容器克隆时不拉 LFS 对象
+# （拿到的是 133 字节指针，np.load 直接报错），所以线上一律用 vectors.dat
 mkdir -p "$DEPLOY/kb/store"
 cp "$SRC/kb/store/chunks.json" "$DEPLOY/kb/store/chunks.json"
-cp "$SRC/kb/store/vectors.npz" "$DEPLOY/kb/store/vectors.npz"
-rm -f "$DEPLOY/kb/store/vectors.npy"
-
-echo "== 同步内置向量模型（容器外网被封，随仓库带上最稳）=="
-if [ -d "$SRC/models/bge-small-zh-v1.5" ]; then
-  mkdir -p "$DEPLOY/models"
-  cp -r "$SRC/models/bge-small-zh-v1.5" "$DEPLOY/models/"
-else
-  echo "本地无 models/ 目录，跳过（线上会退回魔搭源下载）"
-fi
+cp "$SRC/kb/store/vectors.dat" "$DEPLOY/kb/store/vectors.dat"
+rm -f "$DEPLOY/kb/store/vectors.npy" "$DEPLOY/kb/store/vectors.npz"
 
 cd "$DEPLOY"
 echo "== 提交并推送 =="

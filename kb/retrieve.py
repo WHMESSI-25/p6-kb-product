@@ -62,14 +62,28 @@ def _lazy_init():
     t0 = time.time()
     _model = _load_embedder()
     chunks = json.loads((STORE / "chunks.json").read_text(encoding="utf-8"))
-    # 向量库两种存法：本地/开发机用 vectors.npy；魔搭仓库里存 vectors.npz
-    # （平台 .gitattributes 强制 *.npy 走 LFS，npz 走普通存储，克隆下来一定能拿到）
-    npy, npz = STORE / "vectors.npy", STORE / "vectors.npz"
-    if npy.exists():
-        vecs = np.load(npy)
+    # 向量库三种存法，按优先级找：
+    #   vectors.npy —— 本地/开发机（npy 格式）
+    #   vectors.dat —— 魔搭仓库用：平台 .gitattributes 把 *.npy/*.npz 强制转 LFS，
+    #                  而克隆时不拉 LFS 对象，拿到的是 133 字节指针，np.load 直接报错；
+    #                  .dat 不在 LFS 规则里，会以普通文件形式下发
+    #   vectors.npz —— 早期版本遗留（现已被 LFS 规则命中，仅作兜底）
+    for name in ("vectors.npy", "vectors.dat", "vectors.npz"):
+        p = STORE / name
+        if not p.exists():
+            continue
+        if p.stat().st_size < 1024 * 1024:
+            print(f"[store] {name} 只有 {p.stat().st_size} 字节，疑似 LFS 指针，跳过", flush=True)
+            continue
+        if name.endswith(".npz"):
+            with np.load(p) as z:
+                vecs = z["vectors"]
+        else:
+            vecs = np.load(p)
+        print(f"[store] 向量来源 {name}，形状 {vecs.shape}", flush=True)
+        break
     else:
-        with np.load(npz) as z:
-            vecs = z["vectors"]
+        raise FileNotFoundError(f"{STORE} 下没有可用的向量文件（npy/dat/npz 都不存在或都是指针）")
     _store = (chunks, vecs)
     import jieba
     from rank_bm25 import BM25Okapi
