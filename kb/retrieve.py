@@ -72,7 +72,7 @@ def _lazy_init():
         p = STORE / name
         if not p.exists():
             continue
-        if p.stat().st_size < 1024 * 1024:
+        if p.stat().st_size < 100_000:
             print(f"[store] {name} 只有 {p.stat().st_size} 字节，疑似 LFS 指针，跳过", flush=True)
             continue
         if name.endswith(".npz"):
