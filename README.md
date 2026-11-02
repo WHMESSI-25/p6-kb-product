@@ -1,19 +1,10 @@
----
-title: 汕大办事指南知识库
-emoji: 🏫
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # P6 知识库产品：汕头大学办事指南 RAG 问答
 
 把学校信息公开网「办事指南」栏目的 153 篇指南（其中 148 篇正文为流程图 PDF）做成
 可检索、可追问、**带出处引用、不编造**的问答产品。
 
-**线上地址**：（Space 创建后填入）
+**线上地址**：<https://whmessi-p6-kb-product.ms.show> （魔搭创空间，免费 CPU 档；
+容器冷启动要重新加载模型和索引，约 1 分钟，之后每问 10 秒左右）
 
 ## 它能做什么
 
@@ -60,6 +51,22 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 .venv/Scripts/python evaluate.py 轮次名               # 40题自动评估
 ```
 
+## 部署（魔搭创空间）
+
+线上跑的是 <https://whmessi-p6-kb-product.ms.show>：Gradio SDK、2 核 8G 免费 CPU 档，
+`LLM_API_KEY` 以密文变量形式配在空间里（不落任何文件）。
+
+- 入口：本地 `app_gradio.py` → 部署仓库里改名 `app.py`（创空间约定入口名）
+- 依赖：`requirements-deploy.txt` → 部署仓库里改名 `requirements.txt`
+- 向量库：线上用 `kb/store/vectors.npz`。平台 `.gitattributes` 强制 `*.npy` 走 LFS，
+  早期版本因此漏交了向量库，克隆下来根本没有向量文件
+- 模型：`kb/retrieve.py` 三级加载——仓库内置目录 → 魔搭源（容器同网，秒级）→ HF 镜像；
+  HF 的下载超时收到 15 秒，不可达时快速失败而不是干等
+- 启动预热：`app_gradio.py` 在启动时就加载模型和 BM25 索引（约 40 秒），
+  用户第一问不用替冷启动买单
+- 增量更新：`bash scripts/deploy_ms_update.sh "提交说明"`——复用首次部署的本地目录，
+  **不要整库重新克隆**（LFS 大文件会卡住）
+
 ## 踩坑记录
 
 1. **网页语料是空心 的**：办事指南正文多为图片流程图 PDF，HTML 只能抽到「下载阅读器」
@@ -69,6 +76,10 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
    高达 0.59-0.63 与正常题区间重叠，最终防线是提示词「资料不足必须明说」。
 4. **LLM 评分员有 ±1-2 分噪音**：同一份回答两轮评分可能不同（银行名「广东汕头中行汕大
    支行」为原文原话，一轮判对一轮判错）。单轮涨跌 <2 分不宜过度解读。
+5. **线上首问卡了 888 秒，根因有两个**：一是容器里只有 HF 一条模型来源，下载不通时按默认
+   超时死等（用户侧看到的就是「转圈十几分钟」）；二是部署仓库从未提交向量库文件
+   （被平台强制走 LFS 的 `*.npy` 漏掉了）。教训：**部署要按「代码+数据+依赖」三件一起查**，
+   只修看起来最可疑的那一处，会在第二处再摔一次。
 
 ## 目录结构
 
