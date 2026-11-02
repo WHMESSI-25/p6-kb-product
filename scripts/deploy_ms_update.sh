@@ -24,6 +24,14 @@ cp "$SRC/kb/store/chunks.json" "$DEPLOY/kb/store/chunks.json"
 cp "$SRC/kb/store/vectors.npz" "$DEPLOY/kb/store/vectors.npz"
 rm -f "$DEPLOY/kb/store/vectors.npy"
 
+echo "== 同步内置向量模型（容器外网被封，随仓库带上最稳）=="
+if [ -d "$SRC/models/bge-small-zh-v1.5" ]; then
+  mkdir -p "$DEPLOY/models"
+  cp -r "$SRC/models/bge-small-zh-v1.5" "$DEPLOY/models/"
+else
+  echo "本地无 models/ 目录，跳过（线上会退回魔搭源下载）"
+fi
+
 cd "$DEPLOY"
 echo "== 提交并推送 =="
 git add -A

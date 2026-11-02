@@ -30,11 +30,16 @@ def _load_embedder():
     from sentence_transformers import SentenceTransformer
 
     t0 = time.time()
-    # ① 仓库内置模型目录：零网络，最稳
-    if MODEL_DIR.exists() and any(MODEL_DIR.iterdir()):
-        m = SentenceTransformer(str(MODEL_DIR))
-        print(f"[model] 来源=本地目录 {MODEL_DIR} 用时={time.time() - t0:.1f}s", flush=True)
-        return m
+    # ① 仓库内置模型目录：零网络，最稳（魔搭容器外网基本封死，这条是主路径）
+    weights = MODEL_DIR / "model.safetensors"
+    if MODEL_DIR.exists() and (MODEL_DIR / "config.json").exists():
+        # 防坑：若克隆时没拉 LFS，safetensors 会是几百字节的指针文件，硬加载会报错
+        if weights.exists() and weights.stat().st_size > 1024 * 1024:
+            m = SentenceTransformer(str(MODEL_DIR))
+            print(f"[model] 来源=本地目录 {MODEL_DIR} 用时={time.time() - t0:.1f}s", flush=True)
+            return m
+        print(f"[model] 本地目录权重异常（{weights.stat().st_size if weights.exists() else '缺失'} 字节），"
+              f"疑似 LFS 指针，跳过", flush=True)
     # ② 魔搭源：容器与 modelscope.cn 同网，正常几秒到几十秒
     try:
         from modelscope import snapshot_download

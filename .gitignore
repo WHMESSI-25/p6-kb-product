@@ -5,3 +5,6 @@ data/raw/
 kb/store/
 __pycache__/
 *.pyc
+
+# 内置向量模型（部署时随仓库带上，不重复提交到代码仓库）
+models/
