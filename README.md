@@ -58,14 +58,17 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 
 - 入口：本地 `app_gradio.py` → 部署仓库里改名 `app.py`（创空间约定入口名）
 - 依赖：`requirements-deploy.txt` → 部署仓库里改名 `requirements.txt`
-- 向量库：线上用 `kb/store/vectors.npz`。平台 `.gitattributes` 强制 `*.npy` 走 LFS，
-  早期版本因此漏交了向量库，克隆下来根本没有向量文件
-- 模型：`kb/retrieve.py` 三级加载——仓库内置目录 → 魔搭源（容器同网，秒级）→ HF 镜像；
-  HF 的下载超时收到 15 秒，不可达时快速失败而不是干等
-- 启动预热：`app_gradio.py` 在启动时就加载模型和 BM25 索引（约 40 秒），
+- 向量库：线上用 `kb/store/vectors.dat`。平台的 `.gitattributes` 把 `*.npy`/`*.npz`
+  一律强制转 LFS，**而容器克隆时不拉 LFS 对象**——拿到的是 133 字节指针，
+  `np.load` 直接报 `Cannot load file containing pickled data`。`.dat` 不在 LFS 规则内
+  （`git check-attr filter` 实测 unspecified），才会以真文件下发
+- 模型：`kb/retrieve.py` 三级加载——仓库内置目录 → 魔搭源（容器同网，实测 91.4MB
+  用时 7.9 秒、35.9MB/s）→ HF 镜像；HF 的下载超时收到 15 秒，不可达时快速失败
+- 启动预热：`app_gradio.py` 在启动时就加载模型和 BM25 索引（实测 14.7 秒），
   用户第一问不用替冷启动买单
 - 增量更新：`bash scripts/deploy_ms_update.sh "提交说明"`——复用首次部署的本地目录，
-  **不要整库重新克隆**（LFS 大文件会卡住）
+  **不要整库重新克隆**（LFS 大文件会卡住）。推送不会自动重建，必须显式调部署接口：
+  `POST https://modelscope.cn/openapi/v1/studios/{owner}/{repo}/deploy`
 
 ## 踩坑记录
 
@@ -80,6 +83,13 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
    超时死等（用户侧看到的就是「转圈十几分钟」）；二是部署仓库从未提交向量库文件
    （被平台强制走 LFS 的 `*.npy` 漏掉了）。教训：**部署要按「代码+数据+依赖」三件一起查**，
    只修看起来最可疑的那一处，会在第二处再摔一次。
+6. **LFS 是「提交时转指针、克隆时不还原」**：把向量库改成 `.npz` 照样是 LFS 指针，
+   `np.load` 报 `allow_pickle=False`；连模型文件一起塞进仓库也没用——容器里全是 133 字节
+   指针。真正靠谱的判断方式是 `git check-attr filter <路径>`，输出 `lfs` 就会被吞。
+   最终方案：数据文件选一个不在 LFS 规则里的扩展名（`.dat`），模型交给魔搭源下载。
+7. **推送 ≠ 部署**：`git push` 到创空间仓库不会触发重建（实测 25 分钟仍是旧镜像，
+   `deploy/changes-diff` 里 `LastDeployCommitId` 一直不动）。必须显式调
+   `POST /openapi/v1/studios/{owner}/{repo}/deploy`，再看 `logs/build` 与 `logs/run`。
 
 ## 目录结构
 
